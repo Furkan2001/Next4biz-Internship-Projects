@@ -1,0 +1,34 @@
+﻿@model IEnumerable<User>
+
+<h2>Users</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>UserId</th>
+            <th>CompanyId</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserId</td>
+                <td>@user.CompanyId</td>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@user.Password</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@user.UserId">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Create New User</h2>
+
+<partial name="CreateUserPartial" model="new User()" />
