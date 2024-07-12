@@ -1,0 +1,49 @@
+﻿@model User
+@{
+    ViewBag.Title = "User Details";
+}
+
+<h2>User Details</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Email
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Email
+        </dd>
+        <dt class="col-sm-2">
+            Company ID
+        </dt>
+        <dd class="col-sm-10">
+            @Model.CompanyId
+        </dd>
+    </dl>
+</div>
+
+<h3>Labels</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>LabelId</th>
+            <th>UserId</th>
+            <th>PasswordId</th>
+            <th>LabelText</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var label in (IEnumerable<Label>)ViewBag.Labels)
+        {
+            <tr>
+                <td>@label.LabelId</td>
+                <td>@label.UserId</td>
+                <td>@label.PasswordId</td>
+                <td>@label.LabelText</td>
+            </tr>
+        }
+    </tbody>
+</table>
