@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Your Project Name</title>
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header>
+        <!-- Header content -->
+    </header>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="~/js/site.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
