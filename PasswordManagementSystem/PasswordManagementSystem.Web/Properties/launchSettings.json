@@ -1,0 +1,45 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:39319",
+      "sslPort": 44304
+    }
+  },
+  "profiles": {
+    "PasswordManagementSystem": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7270;http://localhost:5031",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:39319",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS next4biz": {
+      "commandName": "IIS",
+      "launchBrowser": true,
+      "applicationUrl": "http://next4biz.passwordmanagementsystem.com",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS company": {
+      "commandName": "IIS",
+      "launchBrowser": true,
+      "applicationUrl": "http://company.passwordmanagementsystem.com",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
